@@ -20,10 +20,6 @@ describe("verifying if elements are visible on maximized browser window", () => 
         await page.removeCookies();
         await page.driver.quit();
     });
-    //may not need this test since it is getting called in the other tests, too
-    /* test('test maximizing window', async () => {
-        await page.maximizeThis();
-    }); */
     test('go to the about page through tiles small window', async () => {
         expect.assertions(3);
         try {  //verify that the accept cookies button is visible on home page
@@ -47,17 +43,6 @@ describe("verifying if elements are visible on maximized browser window", () => 
         } catch (err) {
             expect(err).toEqual(new Error());
         };
-        /* try {  //verify that the accept cookies button is visible on home page
-            expect(await page.isItVisible(page.acceptCookies)).toBeTruthy();
-        } catch (err) {
-            expect(err).toEqual(new Error());
-        };
-        try {  //verify that the accept cookies button is not visible on home page
-            //await page.click(page.altAcceptCookies);
-            expect(await page.isItVisible(page.altAcceptCookies)).toBeFalsy();
-        } catch (err) {
-            expect(err).toEqual(new Error());
-        }; */
     });
     test('go to the museum page through tiles small window', async () => {
          //use the default size window to navigate with
@@ -189,98 +174,4 @@ describe("verifying if elements are visible on maximized browser window", () => 
         await page.driver.sleep(2000);
         expect(await page.isItVisible(page.h22Header)).toBeTruthy();
     });
-    
 });
-    /* test('go to the shop page through tiles', async () => {
-    await page.maximizeThis();
-    expect.assertions(1);
-    try {
-        //await page.click(page.hamburgerMenu);
-        //await page.click(page.menuShopBtn);
-        //await page.driver.sleep(2000);
-        await page.click(page.tile);
-        await page.driver.sleep(2000);
-        expect(await page.isItVisible(todayPage.menuShopBtn)).toBeTruthy();
-    } catch (err) {
-        expect(err).toEqual(new Error());
-    };
-}); */
-/* test('go to the today page through tiles', async () => {
-    await page.maximizeThis();
-    expect.assertions(1);
-    try {  //open the hamburger menu and verify and click the  button
-        //await page.click(page.hamburgerMenu);
-        //await page.click(page.menuIkeaToday);
-        //await page.driver.sleep(5000);
-        await page.click(page.todayTile);
-        await page.driver.sleep(2000);
-        expect(await page.isItVisible(todayPage.searchBtn)).toBeTruthy();
-    } catch (err) {
-        expect(err).toEqual(new Error());
-    };
-});
-test('go to the sales page through tiles', async () => {
-    await page.maximizeThis();
-    expect.assertions(1);
-    try {  //open the hamburger menu and verify and click the  button
-        //await page.click(page.hamburgerMenu);
-        //await page.click(page.menuInternationalSales);
-        //await page.driver.sleep(2000);
-        //await page.click(salesPage.salesCookiesBtn)
-        await page.click(page.todayTile);
-        await page.driver.sleep(2000);
-        expect(await page.isItVisible(page.menuInternationalSales)).toBeTruthy();
-    } catch (err) {
-        expect(err).toEqual(new Error());
-    };
-}); */
-/*try {
-        //await shopPage.isItVisible(shopPage.searchbar);
-        //await page.isItVisible(page.searchbar);
-        await page.driver.sleep(2000);
-        expect(await page.isItVisible(shopPage.searchbar)).toBeTruthy();
-    } catch (err) {
-        expect(err).toEqual(new Error());
-    } */
-/* try {
-    expect(await page.isItVisible(page.menuShopBtn)).toBeTruthy();
-} catch (err) {
-    expect(err).toEqual(new Error());
-}try {
-    expect(await page.isItVisible(page.menuShopBtn)).toBeTruthy();
-} catch (err) {
-    expect(err).toEqual(new Error());
-}try {
-    expect(await page.isItVisible(page.menuShopBtn)).toBeTruthy();
-} catch (err) {
-    expect(err).toEqual(new Error());
-}try {
-    expect(await page.isItVisible(page.menuShopBtn)).toBeTruthy();
-} catch (err) {
-    expect(err).toEqual(new Error());
-}try {
-    expect(await page.isItVisible(page.menuShopBtn)).toBeTruthy();
-} catch (err) {
-    expect(err).toEqual(new Error());
-}try {
-    expect(await page.isItVisible(page.menuShopBtn)).toBeTruthy();
-} catch (err) {
-    expect(err).toEqual(new Error());
-}try {
-    expect(await page.isItVisible(page.menuShopBtn)).toBeTruthy();
-} catch (err) {
-    expect(err).toEqual(new Error());
-}try {
-    expect(await page.isItVisible(page.menuShopBtn)).toBeTruthy();
-} catch (err) {
-    expect(err).toEqual(new Error());
-}try {
-    expect(await page.isItVisible(page.menuShopBtn)).toBeTruthy();
-} catch (err) {
-    expect(err).toEqual(new Error());
-}try {
-    expect(await page.isItVisible(page.menuShopBtn)).toBeTruthy();
-} catch (err) {
-    expect(err).toEqual(new Error());
-} */
-
