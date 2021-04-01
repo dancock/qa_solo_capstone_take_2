@@ -1,0 +1,51 @@
+To Do List:
+
+create github repo
+x	framework 
+x	page objects
+x	file placeholders
+x	readme
+create new github repo
+x	copy framework
+x	copy page objects
+x	copy placeholders
+x	get everything working with the new site
+x	clean up garbage code from previous site
+	hamburger menu
+x		Shop
+x			create new page object  -  https://www.ikea.com/us/en/
+x		IKEA Today
+x			create new page object  -  https://ikea.today/
+x		About IKEA
+x			create new page object  -  https://about.ikea.com/
+x			more cookies
+x		IKEA Museum
+x			create new page object  -  https://ikeamuseum.com/en/startpage/
+x		International Sales
+x			create new page object  -  https://about.ikea.com/en/contact/how-to-buy-ikea-products-from-a-different-country
+x			more cookies? or same as about?
+
+find out about Jira
+x	Jira test plan
+x	Jira Epic
+x	Jira test cases
+x	Jira tasks
+x	etc.
+
+Look for something to use for equivalence partition
+
+look for something to use for state transitioning
+
+look for something to use for boundary analysis
+
+look for something to use for decision rules
+
+look for something for api
+
+task
+branch
+commit
+push
+
+
+

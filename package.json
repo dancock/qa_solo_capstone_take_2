@@ -1,0 +1,32 @@
+{
+  "name": "qa_solo_capstone_take_2",
+  "version": "1.0.0",
+  "description": "2nd attempt at the solo project since no one was able to figure out how to close that modal window on the last site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dancock/qa_solo_capstone_take_2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dancock/qa_solo_capstone_take_2/issues"
+  },
+  "homepage": "https://github.com/dancock/qa_solo_capstone_take_2#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "@types/selenium-webdriver": "^4.0.12",
+    "chromedriver": "^89.0.0",
+    "geckodriver": "^1.22.2",
+    "selenium-webdriver": "*"
+  }
+}
