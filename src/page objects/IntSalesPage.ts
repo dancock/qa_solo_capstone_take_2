@@ -7,7 +7,6 @@ export class SalesPage extends BasePage {
   
   salesCookiesBtn: By = By.css('button.btn.btn--filled.js-cookie-accept');
 
-
   constructor(driver) {
     super(driver);
     this.url = "https://www.ikea.com";
